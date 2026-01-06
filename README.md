@@ -85,3 +85,7 @@ Reviews: จำนวนรีวิวทั้งหมดที่เขี�
 Info: แสดงวันที่เริ่มสมัครใช้งาน (Create account date)
 
 Account Logout: ปุ่ม Log out สำหรับออกจากระบบ
+
+
+<img width="8068" height="5146" alt="image" src="https://github.com/user-attachments/assets/6e738d7a-d2d9-4dc3-b1f8-ecbb9f80bd14" />
+

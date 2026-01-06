@@ -1,64 +1,89 @@
-<img width="180" height="1000" alt="image" src="https://github.com/user-attachments/assets/bb520d3f-e4cb-4673-8ef9-e2a61ce8d3a3" />
+Music Review & Discovery Platform
+แพลตฟอร์มแอปพลิเคชันสำหรับค้นหาและรีวิวเพลงที่เชื่อมต่อข้อมูลจาก Spotify ช่วยให้ผู้ใช้งานสามารถบันทึกความรู้สึกที่มีต่อเพลงในมิติต่างๆ และเก็บสะสมรายการเพลงโปรดได้ในที่เดียว
 
-1. หน้า Home (หน้าแรก)
+รายละเอียดและฟังก์ชันการทำงาน (Application Features)
+1. ระบบยืนยันตัวตน (Authentication)
 
-Search Bar ด้านบนสุด สำหรับพิมพ์ค้นหา
-ปกเพลง กดเพื่อไปหน้ารีวิวเพลงนั้นๆ โดย ดึงเพลงมาจาก api ของ Spotify
+หน้าจอสำหรับเข้าสู่ระบบและสมัครสมาชิก ออกแบบให้รองรับการใช้งานที่ปลอดภัยและสะดวก
 
-<img width="180" height="965" alt="image" src="https://github.com/user-attachments/assets/7acb22c6-d20f-4161-ab38-67d5a49d01d4" />
+Login / Register Toggle: แถบเมนูด้านบนสำหรับกดสลับระหว่างโหมดลงทะเบียนและเข้าสู่ระบบ
 
-2. หน้ารีวิว
+Spotify Integration: แสดงโลโก้ Spotify เพื่อสื่อถึงแหล่งข้อมูลเพลงหลักของระบบ
 
-รูปปกใหญ่ ชื่อเพลง ชื่อศิลปิน
+Input Fields: ช่องกรอก Username หรือ Email และช่อง Password ที่มีการซ่อนตัวอักษร
 
-Detail Slider แถบเลื่อนคะแนน 3 ด้าน (Beat, Lyric, Mood)
+Functionality:
 
-Color Palette แถบเลือกสี เพื่อระบุ "อารมณ์ของเพลง" (Mood Color) และจะเปลี่ยนสี background ตามสีที่ถูกเลือกมากที่สุด
+ระบบ Remember me เพื่อจำการเข้าใช้งาน
 
-User Review อ่านคอมเมนต์คนอื่น และปุ่มกดเขียนรีวิวของตัวเอง
+ลิงก์ Forget Password สำหรับกู้คืนรหัสผ่าน
 
-<img width="180" height="844" alt="image" src="https://github.com/user-attachments/assets/4af0de25-4440-4783-b846-0a489bf514d0" />
+(ในโหมดสมัครสมาชิก) มีช่อง Confirm Password เพิ่มเติมเพื่อยืนยันความถูกต้อง
 
-3. หน้าประวัติ
+2. หน้าหลัก (Home & Discovery)
 
-Search Bar ค้นหาประวัติเก่าๆ ของตัวเอง
+หน้าแรกสำหรับค้นหาและเลือกเพลงที่ต้องการรีวิว
 
-Comment List รายการที่เราเคยคอมเมนต์ไว้ เรียงลงมาเป็นลิสต์
+Search System: แถบค้นหา (Search Bar) ด้านบนสุด รองรับการพิมพ์ชื่อเพลง ศิลปิน หรืออัลบั้ม
 
-Detail ในการ์ดจะบอกว่าเราคอมเมนต์ว่าอะไร วันที่เท่าไหร่, เพลงอะไร
+API Integration: ดึงข้อมูลปกเพลงและรายชื่อเพลงโดยตรงจาก Spotify API เพื่อความถูกต้องของข้อมูล
 
-<img width="180" height="1688" alt="image" src="https://github.com/user-attachments/assets/530134d7-d3de-40a7-9e39-2794f6cf44d0" />
+Navigation: เมื่อกดที่รูปปกเพลง ระบบจะนำเข้าสู่หน้ารีวิวของเพลงนั้นๆ ทันที
 
-4. หน้า Profile
+3. หน้ารีวิวเพลง (Review Interface)
 
-Profile Info รูปโปรไฟล์ และชื่อ
+ส่วนสำคัญที่สุดของแอปพลิเคชัน สำหรับให้คะแนนและบันทึกความรู้สึก
 
-Favorite Song แถวแสดงปกเพลงโปรด
+Music Information: แสดงรูปปกขนาดใหญ่ พร้อมชื่อเพลงและชื่อศิลปิน
 
-Recent Review แถวแสดงรีวิวล่าสุด
+Multi-Axis Rating: ระบบให้คะแนนแบบ Slider Bar แยกตามองค์ประกอบ 3 ด้าน:
 
-Stats Table ตารางสรุปตัวเลขด้านล่างสุด (Listen, Reaction, Reviews)
+Beat: ความชอบในจังหวะดนตรี
 
-<img width="180" height="1688" alt="image" src="https://github.com/user-attachments/assets/a5b094f8-c926-4b80-9717-bb17650fd23b" />
+Lyric: ความชอบในเนื้อหาและคำร้อง
 
-5. หน้า Login / Register (หน้าเข้าสู่ระบบ)
+Mood: อารมณ์ร่วมกับเพลง
 
-Logo & Title มีโลโก้ Spotify พร้อมชื่อ "Music Review & Discovery Platform"
+Mood Color Palette: ฟีเจอร์เลือกสีเพื่อระบุอารมณ์ของเพลง โดยสีที่ถูกเลือกจะส่งผลให้ Background ของหน้านั้นเปลี่ยนสีตาม
 
-Toggle Menu ด้านบนมีตัวเลือกให้กดสลับระหว่าง Register (สมัครใหม่) กับ Sign in (เข้าสู่ระบบ)
+User Reviews: ส่วนแสดงความคิดเห็นของผู้ใช้งานอื่น และปุ่มสำหรับเริ่มเขียนรีวิวของตนเอง
 
-ช่องกรอก Username/Email (Username@mail.com)
+4. ประวัติการรีวิว (Activity History)
 
-ช่องกรอก Password (แสดงเป็นดอกจัน *****)
-(ถ้าในหน้า Register จะมีให้ Confirm Password)
+หน้ารวมรายการรีวิวที่ผู้ใช้งานเคยบันทึกไว้ แสดงผลในรูปแบบ List
 
-Checkbox "Remember me" (จำรหัสผ่าน)
+Header: แสดงข้อมูลผู้ใช้และจำนวนรีวิวทั้งหมด (Total Count)
 
-Link "Forget Password?" (ลืมรหัสผ่าน)
+Review Cards: การ์ดแสดงรายการรีวิว แต่ละใบประกอบด้วย:
 
-Main Button ปุ่มสีเขียวขนาดใหญ่ "Sign in"
+รูป Thumbnail ปกอัลบั้ม
 
----*ภาพรวมหน้า Prototype ทั้งหมด*---
+ชื่อเพลงและศิลปิน
 
-<img width="4202" height="3938" alt="image" src="https://github.com/user-attachments/assets/2951d170-6dff-4509-929a-e4be681703a7" />
+คะแนนที่ให้ไว้ในแต่ละด้าน (Beat, Lyric, Mood) อย่างละเอียด
 
+ข้อความรีวิว (Comment) ที่บันทึกไว้
+
+5. เพลงที่ชื่นชอบ (Favorite Songs)
+
+หน้าแกลเลอรีสำหรับเก็บรวบรวมเพลงที่ผู้ใช้งานกดถูกใจ
+
+Layout: แสดงผลแบบ Grid (ตาราง) เน้นรูปภาพปกอัลบั้มให้ดูสวยงามและค้นหาง่าย
+
+Card Detail: ในแต่ละรายการจะแสดงรูปปก ชื่อเพลงพร้อมสัญลักษณ์หัวใจ และชื่อศิลปิน
+
+6. โปรไฟล์ผู้ใช้ (User Profile)
+
+หน้าแสดงข้อมูลส่วนตัวและการตั้งค่าบัญชี
+
+Identity: แสดงรูปภาพ Avatar, Username และ Email ของผู้ใช้งาน
+
+Statistics: แถบแสดงสถิติภาพรวมของผู้ใช้ ได้แก่
+
+Reaction: จำนวนรีแอคชั่นที่ได้รับ
+
+Reviews: จำนวนรีวิวทั้งหมดที่เขียน
+
+Member Info: แสดงวันที่เริ่มสมัครใช้งาน (Create account date)
+
+Account Management: ปุ่ม Log out สำหรับออกจากระบบ
